@@ -1,0 +1,8 @@
+{
+  "name": "cprn-boilerplate",
+  "version": "0.0.1",
+  "description": "A fully functional state of the art but short template fro Cyberpolin",
+  "repository": "git@github.com:Esemesek/react-native-new-template.git",
+  "author": "Carlos Gonzalez <iam@cyberpolin.com>",
+  "license": "MIT"
+}
