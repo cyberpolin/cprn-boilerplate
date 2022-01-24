@@ -12,19 +12,28 @@ import LinearGradient from 'react-native-linear-gradient'
 
 import Config from 'react-native-config'
 import styled from 'styled-components'
-import { Linking } from 'react-native'
+import {Linking} from 'react-native'
 
 const {APP_NAME, GITHUB_REPO} = Config
 
 const App: () => ReactNode = () => {
-
   return (
     <Wrapper>
       <H1>{APP_NAME}</H1>
-      <Info>Thank you for using my boilerplate, if you find it usefull please support it by adding a Start to it, and follow me at</Info>
-      <Link onPress={()=>Linking.openURL(GITHUB_REPO)}>https://github.com/cyberpolin/cprn-boilerplate</Link>
-      <Info>You are almost done setting your app, I've written some tools and a set of isntructions, so if you will like for icons, and more settings follow the isntructions at</Info>
-      <Link onPress={()=>Linking.openURL('https://cyberpolin.com/cprn-boilerplate')}>https://cyberpolin.com/cprn-boilerplate</Link>
+      <Info>
+        Thank you for using my boilerplate, if you find it usefull please support it by adding a Start to it, and follow me at
+      </Info>
+      <Link onPress={() => Linking.openURL(GITHUB_REPO)}>
+        https://github.com/cyberpolin/cprn-boilerplate
+      </Link>
+      <Info>
+        You are almost done setting your app, I've written some tools and a set of isntructions, so if you will like for icons, and more settings follow the isntructions at
+      </Info>
+      <Link
+        onPress={() =>
+          Linking.openURL('https://cyberpolin.com/cprn-boilerplate')}>
+        https://cyberpolin.com/cprn-boilerplate
+      </Link>
     </Wrapper>
   );
 };
