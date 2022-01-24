@@ -1,3 +1,1 @@
-#!/usr/bin/env node
-
-console.log("First template script");
+node console.log("First template script");
