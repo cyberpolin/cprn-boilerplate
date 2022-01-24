@@ -12,7 +12,7 @@ import LinearGradient from 'react-native-linear-gradient'
 
 import Config from 'react-native-config'
 import styled from 'styled-components'
-import { Linking } from 'react-native';
+import { Linking } from 'react-native'
 
 const {APP_NAME, GITHUB_REPO} = Config
 
@@ -38,8 +38,8 @@ const Wrapper = styled(LinearGradient).attrs({
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 20;
-  padding-right: 20;
+  padding-left: 20px;
+  padding-right: 20px;
 `
 
 const H1 = styled.Text`
@@ -50,8 +50,8 @@ const H1 = styled.Text`
 const Info = styled.Text`
   font-size: 14px;
   color: #FDFDFD;
-  margin-top:20;
-  margin-bottom:20;
+  margin-top: 20px;
+  margin-bottom: 20px;
 `
 
 const Link = styled(Info)`
