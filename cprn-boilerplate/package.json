@@ -10,7 +10,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-navigation/bottom-tabs": "^6.2.0",
     "@react-navigation/native": "^6.0.8",
+    "@react-navigation/native-stack": "^6.5.0",
     "@types/react-redux": "^7.1.22",
     "@types/styled-components": "^5.1.21",
     "axios": "^0.25.0",

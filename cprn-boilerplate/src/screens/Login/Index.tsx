@@ -3,5 +3,5 @@ import Recovery from './Recovery'
 
 export {
   Login,
-  Recovery
+  Recovery,
 }

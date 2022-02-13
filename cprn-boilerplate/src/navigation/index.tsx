@@ -1,15 +1,25 @@
-import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import Main from '../screens/Index'
-import {
-  Login,
-  Recovery
-} from '../screens/Login/Index'
+import * as React from 'react'
+import {useState, useEffect} from 'react'
+import {NavigationContainer} from '@react-navigation/native';
+
+import LoginStack from './Login/Index'
+import MainStack from './Main/Index'
+import Loading from '../screens/Loading'
+
 
 export default function App() {
+  const [token, useToken] = useState(false)
+  const [redux, useRedux] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      useToken(true)
+      useRedux(true)
+    }, 2000)
+  }, [])
   return (
     <NavigationContainer>
-      <Recovery/>
+      {!redux ? <Loading /> : token ? <MainStack /> : <LoginStack />}
     </NavigationContainer>
   );
 }

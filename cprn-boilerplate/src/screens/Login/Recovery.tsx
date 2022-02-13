@@ -4,14 +4,15 @@ import LinearGradient from 'react-native-linear-gradient'
 
 import Config from 'react-native-config'
 import styled from 'styled-components'
-import {Linking} from 'react-native'
+import {Button} from 'react-native-elements'
 
 const {APP_NAME, GITHUB_REPO} = Config
 
-const App: () => ReactNode = () => {
+const App: () => ReactNode = ({navigation}) => {
   return (
     <Wrapper>
       <H1>RECOVERY</H1>
+      <Button title='Go to Login' onPress={() => navigation.navigate('Login')}/>
     </Wrapper>
   );
 };
